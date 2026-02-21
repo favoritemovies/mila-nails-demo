@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Mila Nails - Nail Tech • Manicure, Gel, Extensions, Nail Art</title>
+  <meta name="description" content="Clean, modern nail tech landing page demo. Services, portfolio, pricing, reviews, FAQ, and contact form with mailto booking." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="./" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Mila Nails — Nail Tech" />
+  <meta property="og:description" content="Manicure, Gel, Extensions & Nail Art. Portfolio, pricing, reviews, FAQ, and booking contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./" />
+  <meta property="og:image" content="./assets/hero.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mila Nails — Nail Tech" />
+  <meta name="twitter:description" content="Clean nail tech landing demo: services, portfolio, pricing, reviews, FAQ, contact." />
+  <meta name="twitter:image" content="./assets/hero.jpg" />
+
+  <!-- Inline SVG favicon (data-uri) -->
+  <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23ff4fa3'/%3E%3Cstop offset='1' stop-color='%23ff7a86'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23ffffff'/%3E%3Cpath d='M20 42c8-2 16-10 18-18 2-8 10-6 8 2-3 12-14 23-28 26-7 1-8-8 2-10z' fill='url(%23g)'/%3E%3Ccircle cx='44' cy='22' r='4' fill='%23ff4fa3'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Mila Nails</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+          <a class="nav-link" href="#services" data-i18n="nav.services">Services</a>
+          <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a class="nav-link" href="#pricing" data-i18n="nav.pricing">Pricing</a>
+          <a class="nav-link" href="#reviews" data-i18n="nav.reviews">Reviews</a>
+          <a class="nav-link" href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+
+          <div class="nav-actions">
+            <button class="btn btn-ghost" id="langToggle" type="button" aria-label="Switch language">
+              <span class="lang-pill" aria-hidden="true">EN / RU</span>
+              <span class="sr-only" data-i18n="a11y.langToggle">Switch language</span>
+            </button>
+
+            <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.book">
+              Book
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="top" class="hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge" data-i18n="hero.badge">Clean • Gentle • Long-lasting</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title">Mila Nails</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Beautiful manicure & gel sets with a clean, modern finish - designed for your lifestyle.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaBook">Book now</a>
+            <a class="btn btn-secondary" href="#portfolio" data-i18n="hero.ctaPortfolio">See portfolio</a>
+          </div>
+
+          <ul class="hero-highlights" aria-label="Highlights">
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              <span data-i18n="hero.point1">Sterile tools & single-use disposables</span>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              <span data-i18n="hero.point2">Precise shaping & cuticle care</span>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true"></span>
+              <span data-i18n="hero.point3">Soft, trendy palettes & custom art</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Hero image">
+          <div class="hero-media" role="img" aria-label="Nail work preview image"></div>
+          <div class="hero-card-body">
+            <div class="hero-stat">
+              <div class="hero-stat-num">4.9★</div>
+              <div class="hero-stat-text" data-i18n="hero.rating">Average rating</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">60–90</div>
+              <div class="hero-stat-text" data-i18n="hero.duration">Minutes per session</div>
+            </div>
+            <div class="hero-mini">
+              <span class="chip" data-i18n="hero.chip1">Manicure</span>
+              <span class="chip" data-i18n="hero.chip2">Gel</span>
+              <span class="chip" data-i18n="hero.chip3">Extensions</span>
+              <span class="chip" data-i18n="hero.chip4">Art</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="services.title">Services</h2>
+          <p class="lead" data-i18n="services.subtitle">Choose a service - I'll tailor the details to your nails and style.</p>
+        </div>
+
+        <div class="cards grid-4">
+          <article class="card">
+            <h3 class="h3" data-i18n="services.manicure.title">Manicure</h3>
+            <p class="muted" data-i18n="services.manicure.desc">Clean cuticle work, shaping, and a glossy or nude finish.</p>
+            <ul class="bullets">
+              <li data-i18n="services.manicure.li1">Shape + cuticle care</li>
+              <li data-i18n="services.manicure.li2">Classic or nude polish</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="h3" data-i18n="services.gel.title">Gel</h3>
+            <p class="muted" data-i18n="services.gel.desc">Long-lasting gel color with a smooth, even surface.</p>
+            <ul class="bullets">
+              <li data-i18n="services.gel.li1">Perfect leveling</li>
+              <li data-i18n="services.gel.li2">Trendy shades</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="h3" data-i18n="services.ext.title">Extensions</h3>
+            <p class="muted" data-i18n="services.ext.desc">Natural-looking length and strength - short to medium or glam.</p>
+            <ul class="bullets">
+              <li data-i18n="services.ext.li1">Length + structure</li>
+              <li data-i18n="services.ext.li2">Refill available</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="h3" data-i18n="services.art.title">Nail Art</h3>
+            <p class="muted" data-i18n="services.art.desc">Minimal lines, chrome accents, French, or custom designs.</p>
+            <ul class="bullets">
+              <li data-i18n="services.art.li1">Custom ideas</li>
+              <li data-i18n="services.art.li2">Add-on friendly</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="portfolio.title">Portfolio</h2>
+          <p class="lead" data-i18n="portfolio.subtitle">Tap a photo to open the gallery. Use arrows or swipe/keys.</p>
+        </div>
+
+        <div class="portfolio-toolbar" role="toolbar" aria-label="Portfolio filters">
+          <div class="segmented" id="portfolioFilters" aria-label="Filter categories">
+            <!-- Buttons inserted by JS -->
+          </div>
+          <div class="portfolio-meta">
+            <span class="muted" id="portfolioCount" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div id="portfolioGrid" class="gallery-grid" aria-label="Portfolio gallery">
+          <!-- Cards inserted by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="pricing.title">Pricing</h2>
+          <p class="lead" data-i18n="pricing.subtitle">Transparent pricing. Final cost depends on length & design complexity.</p>
+        </div>
+
+        <div class="pricing grid-3">
+          <article class="card price-card">
+            <div class="price-top">
+              <h3 class="h3" data-i18n="pricing.basic.title">Essential</h3>
+              <p class="muted" data-i18n="pricing.basic.desc">Clean manicure + one color.</p>
+            </div>
+            <div class="price">
+              <span class="price-amount">$55</span>
+              <span class="muted" data-i18n="pricing.from">starting from</span>
+            </div>
+            <ul class="bullets">
+              <li data-i18n="pricing.basic.li1">Shape + cuticle care</li>
+              <li data-i18n="pricing.basic.li2">One gel color</li>
+              <li data-i18n="pricing.basic.li3">Top coat + finish</li>
+            </ul>
+            <a class="btn btn-secondary full" href="#contact" data-i18n="pricing.cta">Book this</a>
+          </article>
+
+          <article class="card price-card featured" aria-label="Most popular">
+            <div class="ribbon" data-i18n="pricing.popular">Most popular</div>
+            <div class="price-top">
+              <h3 class="h3" data-i18n="pricing.plus.title">Signature</h3>
+              <p class="muted" data-i18n="pricing.plus.desc">Gel + leveling + simple design.</p>
+            </div>
+            <div class="price">
+              <span class="price-amount">$75</span>
+              <span class="muted" data-i18n="pricing.from">starting from</span>
+            </div>
+            <ul class="bullets">
+              <li data-i18n="pricing.plus.li1">Gel leveling</li>
+              <li data-i18n="pricing.plus.li2">1–2 accent nails</li>
+              <li data-i18n="pricing.plus.li3">Long-lasting wear</li>
+            </ul>
+            <a class="btn btn-primary full" href="#contact" data-i18n="pricing.cta">Book this</a>
+          </article>
+
+          <article class="card price-card">
+            <div class="price-top">
+              <h3 class="h3" data-i18n="pricing.pro.title">Extensions</h3>
+              <p class="muted" data-i18n="pricing.pro.desc">Length + structure + polish.</p>
+            </div>
+            <div class="price">
+              <span class="price-amount">$110</span>
+              <span class="muted" data-i18n="pricing.from">starting from</span>
+            </div>
+            <ul class="bullets">
+              <li data-i18n="pricing.pro.li1">Short–medium length</li>
+              <li data-i18n="pricing.pro.li2">Structure & shaping</li>
+              <li data-i18n="pricing.pro.li3">Color included</li>
+            </ul>
+            <a class="btn btn-secondary full" href="#contact" data-i18n="pricing.cta">Book this</a>
+          </article>
+        </div>
+
+        <div class="addons card">
+          <h3 class="h3" data-i18n="pricing.addonsTitle">Add-ons</h3>
+          <div class="addon-list">
+            <div class="addon"><span data-i18n="pricing.addon1">French / Ombre</span><span class="muted">+$15</span></div>
+            <div class="addon"><span data-i18n="pricing.addon2">Chrome / Cat eye</span><span class="muted">+$10</span></div>
+            <div class="addon"><span data-i18n="pricing.addon3">Complex art (per nail)</span><span class="muted">+$5–$12</span></div>
+            <div class="addon"><span data-i18n="pricing.addon4">Repair (per nail)</span><span class="muted">+$5</span></div>
+          </div>
+          <p class="muted small" data-i18n="pricing.note">
+            Note: prices are placeholders for this demo. Adjust to your local market and experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="reviews.title">Reviews</h2>
+          <p class="lead" data-i18n="reviews.subtitle">A few words from happy clients (demo placeholders).</p>
+        </div>
+
+        <div class="grid-3">
+          <figure class="card review">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote data-i18n="reviews.r1.text">So clean and precise! The cuticle work is perfect and the gel lasted 3+ weeks.</blockquote>
+            <figcaption class="muted" data-i18n="reviews.r1.meta">- Anna, Brooklyn</figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote data-i18n="reviews.r2.text">I asked for a natural look and got exactly what I wanted. Super friendly and professional.</blockquote>
+            <figcaption class="muted" data-i18n="reviews.r2.meta">- Kate, Queens</figcaption>
+          </figure>
+
+          <figure class="card review">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote data-i18n="reviews.r3.text">Beautiful nail art and a calm atmosphere. I’ll definitely book again.</blockquote>
+            <figcaption class="muted" data-i18n="reviews.r3.meta">- Maria, New York City</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="faq.title">FAQ</h2>
+          <p class="lead" data-i18n="faq.subtitle">Quick answers. Feel free to message me if you’re unsure.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1.q">How do I book an appointment?</summary>
+            <div class="faq-body">
+              <p class="muted" data-i18n="faq.q1.a">Use the contact form below - it will open your email app with all details filled in.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q2.q">How long does it take?</summary>
+            <div class="faq-body">
+              <p class="muted" data-i18n="faq.q2.a">Most sessions take 60–90 minutes. Extensions and complex art can take longer.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q3.q">Do you do repairs?</summary>
+            <div class="faq-body">
+              <p class="muted" data-i18n="faq.q3.a">Yes - small repairs are available per nail. Mention it in your message.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary data-i18n="faq.q4.q">What should I bring?</summary>
+            <div class="faq-body">
+              <p class="muted" data-i18n="faq.q4.a">Just your inspiration photos. If you have allergies/sensitivities, tell me in advance.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="contact.title">Contact</h2>
+          <p class="lead" data-i18n="contact.subtitle">Send a request - the form opens your email app with everything pre-filled.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="card form" novalidate>
+            <div class="form-row">
+              <label for="name" data-i18n="form.name">Name</label>
+              <input id="name" name="name" autocomplete="name" required minlength="2" placeholder="Your name" />
+              <p class="field-error" id="err-name" aria-live="polite"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              <p class="field-error" id="err-email" aria-live="polite"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="phone" data-i18n="form.phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (___) ___-____" />
+              <p class="field-error" id="err-phone" aria-live="polite"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="service" data-i18n="form.service">Service</label>
+              <select id="service" name="service" required>
+                <option value="" data-i18n="form.servicePlaceholder">Select a service</option>
+                <option value="Manicure" data-i18n="form.serviceManicure">Manicure</option>
+                <option value="Gel" data-i18n="form.serviceGel">Gel</option>
+                <option value="Extensions" data-i18n="form.serviceExtensions">Extensions</option>
+                <option value="Nail Art" data-i18n="form.serviceArt">Nail Art</option>
+              </select>
+              <p class="field-error" id="err-service" aria-live="polite"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="date" data-i18n="form.date">Preferred date</label>
+              <input id="date" name="date" type="date" />
+              <p class="muted small" data-i18n="form.dateHint">If you’re flexible, leave it empty and tell preferred days/times.</p>
+            </div>
+
+            <div class="form-row">
+              <label for="message" data-i18n="form.message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Tell me what you’d like (color, length, references)"></textarea>
+              <p class="field-error" id="err-message" aria-live="polite"></p>
+            </div>
+
+            <button class="btn btn-primary full" type="submit" id="submitBtn">
+              <span data-i18n="form.submit">Send request</span>
+            </button>
+
+            <p class="muted small" data-i18n="form.note">
+              This demo uses mailto (no backend). On submit, your email app opens a pre-filled message.
+            </p>
+          </form>
+
+          <aside class="card contact-card">
+            <h3 class="h3" data-i18n="contact.detailsTitle">Details</h3>
+
+            <div class="contact-lines">
+              <div class="line">
+                <span class="label" data-i18n="contact.phone">Phone</span>
+                <a class="value" href="tel:+19173486244" aria-label="Call phone">+1 (917) 348-6244</a>
+              </div>
+              <div class="line">
+                <span class="label" data-i18n="contact.instagram">Instagram</span>
+                <a class="value" href="#" aria-label="Instagram link (placeholder)">@mila.nails</a>
+              </div>
+              <div class="line">
+                <span class="label" data-i18n="contact.area">Area</span>
+                <span class="value" data-i18n="contact.areaValue">Princeton / Plainsboro, NJ</span>
+              </div>
+              <div class="line">
+                <span class="label" data-i18n="contact.hours">Hours</span>
+                <span class="value" data-i18n="contact.hoursValue">Mon–Sat • 10:00–18:00</span>
+              </div>
+            </div>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <p class="muted small" data-i18n="contact.tip">
+              Tip: Add reference photos and your preferred length/shape for the fastest quote.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Mila Nails</p>
+
+      <p class="footer-credit">
+        <span data-i18n="footer.creditPrefix">Demo landing built by</span>
+        <a href="https://portfolio-lake-seven-92.vercel.app/en"
+     target="_blank"
+     rel="noopener noreferrer">
+       Natalia Azarevich
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox modal -->
+  <div class="modal" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="document" aria-modal="true">
+      <button class="icon-btn modal-close" type="button" aria-label="Close" data-close="true">✕</button>
+
+      <div class="modal-body">
+        <button class="icon-btn modal-nav prev" type="button" aria-label="Previous image">‹</button>
+
+        <figure class="modal-figure">
+          <img id="lightboxImg" alt="" />
+          <figcaption id="lightboxCap" class="muted small"></figcaption>
+        </figure>
+
+        <button class="icon-btn modal-nav next" type="button" aria-label="Next image">›</button>
+      </div>
+
+      <div class="modal-footer">
+        <span class="muted small" id="lightboxCounter" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

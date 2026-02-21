@@ -1,0 +1,22 @@
+[
+  {
+    "src": "assets/gallery/art-line-02.jpg",
+    "category": "art",
+    "alt": "art line 02"
+  },
+  {
+    "src": "assets/gallery/gel-green-01.jpg",
+    "category": "gel",
+    "alt": "gel green 01"
+  },
+  {
+    "src": "assets/gallery/manicure-pink-03.jpg",
+    "category": "manicure",
+    "alt": "manicure pink 03"
+  },
+  {
+    "src": "assets/gallery/manicure-red-04.jpg",
+    "category": "manicure",
+    "alt": "manicure red 04"
+  }
+]
